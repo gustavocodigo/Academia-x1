@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+    <div class="pages">
+        <a  href="login.html" class="pages_el concluido" target="_blank" >LOGIN PARA O SITE</a>
+        <a href="index.html" class="pages_el concluido" target="_blank">PAGINA PRINCIPAL</a>
+        <a href="products.html" class="pages_el concluido" target="_blank">GALERIA DE IMAGENS / PRODUTOS</a>
+        <a href="register.html" class="pages_el concluido" target="_blank">CADASTRO DOS CLIENTES</a>
+        <div>
+
+</body>
+
+</html>
+
+
+<style>
+    body {
+        /* background: url(./assets/background.jpg); */
+        background-color: rgb(223, 231, 238);
+        background-size: 100% 100%;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .pages {
+       
+        margin-top: 100px;
+        display: flex;
+        gap: 30px;
+        margin: auto;
+        flex-wrap: wrap;
+
+        max-width: 100%;
+        padding: 40px;
+
+
+        justify-content: center;
+    }
+
+    .pages_el{
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(246, 112, 112);
+        text-decoration: none;
+        width: 140px;
+        height: 70px;
+        background-color: azure;
+        padding: 12px;
+        border-left: 20px solid rgb(42, 42, 42);
+        transition: 1s;
+        font-size: 14px;
+    }
+
+
+    .pages>a:hover {
+        transition: 1s;
+        scale: 1.1;
+    }
+
+    .concluido {
+        border: 2px solid rgb(134, 246, 112);
+        border-left: 20px solid rgb(66, 249, 60);
+        
+    }
+
+</style>
