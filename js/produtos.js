@@ -126,6 +126,11 @@ function domLoaded() {
             "price": "1310,00 R$",
             "name": "INTEGRITY+ LIFECYCLE UPRIGHT BIKE",
             "image": "https://www.lifefitness.com/resource/image/2323830/portrait_ratio1x1/400/400/2f9c8d4451fe2ddd27e741575c725fb4/CB/life-fitness-integrity-series-upright-bike-with-24-inch-se4-in-black-onyx.png"
+        },
+        {
+            "price": "131012,00 R$",
+            "name": "INTEG2RITY+ LIFECYCLE UPRIGHT BIKE",
+            "image": "https://www.lifefitness.com/resource/image/2323830/portrait_ratio1x1/400/400/2f9c8d4451fe2ddd27e741575c725fb4/CB/life-fitness-integrity-series-upright-bike-with-24-inch-se4-in-black-onyx.png"
         }
     ]
 
@@ -134,8 +139,7 @@ function domLoaded() {
         const element = products[index];
         add_to_cart(element)
     }
-
-
+    
 
     console.table(products)
 
