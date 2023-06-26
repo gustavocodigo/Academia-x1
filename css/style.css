@@ -228,9 +228,21 @@ footer > div {
 
 
 /* // smartphone */
+.selected-tab {
+    color: red;
+    border-bottom: 2px solid  red;
+}
+
+
+
+#list-nav-icon {
+    display: none;
+}
 
 @media screen and (max-width: 820px) {
-
+    #list-nav-icon {
+        display: block;
+    }
     .banner-title {
         font-size: 20px;
     }
@@ -261,11 +273,28 @@ footer > div {
     }
 
     header > nav {
-        gap: 12px;
+        width: 250px;
+        max-width: 100%;
+        position: absolute;
+        
+        top: 10px;
+        right: 10px;
+        gap: 30px;
+        padding: 24px;
+        padding-top: 24px;
+        flex-direction: column;
+      
+        
+        background-color: white;
+        z-index: 10;
+
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border: 1px solid black;
+        
+
     }
 
     header > nav > a{
-       
         font-size: 16px;
     }
 
@@ -285,6 +314,15 @@ footer > div {
         border-bottom:1px solid #222;
     }
 
+    .selected-tab {
+        color: red;
+        border: none;
+    }
+    
+    
+    
+    
+
 
     .login-container {
         margin: auto;
@@ -293,14 +331,10 @@ footer > div {
         max-width: 100%;
     
     }
-    
+   
 }
 
 
-.selected-tab {
-    color: red;
-    border-bottom: 2px solid  red;
-}
 
 
 
