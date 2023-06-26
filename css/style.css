@@ -17,8 +17,7 @@
     
     display: flex;
     flex-direction: column;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
 }
 
 
@@ -186,13 +185,6 @@ footer > div {
 }
 
 
-.product {
-    width: 300px;
-  
-    max-width: 100%;
-    margin: 20px;
-}
-
 .product:hover {
     cursor: pointer;
 }
@@ -206,15 +198,13 @@ footer > div {
 
 
 .products {
-    padding: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 2000px;
-    margin: auto;
-    justify-content: space-around;
-    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 50px 300px; 
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
-
 
 .demo > div {
     scale: 0.96;
@@ -315,25 +305,18 @@ footer > div {
         width: 32px;
         height: 50px;
         margin-left: 2%;
-    }
-
-    .products {
-        gap: 10px;
-    }
+    } 
     .product {
-        margin: auto;
-        border-bottom:1px solid #222;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .selected-tab {
         color: red;
         border: none;
     }
-    
-    
-    
-    
-
 
     .login-container {
         margin: auto;
@@ -345,6 +328,38 @@ footer > div {
    
 }
 
+@media (max-width: 1600px) {
+    .products {
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        gap: 50px 200px; 
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .products {
+        display: grid;
+        grid-template-columns: 250px 250px;
+        gap: 50px 200px; 
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media (max-width: 820px) {
+    .products {
+        display: grid;
+        grid-template-columns: 300px;
+        row-gap: 50px;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
 
 
 
