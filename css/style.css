@@ -192,7 +192,7 @@ footer > div {
 
 .product img {
 
-    max-width: 100%;
+    max-width: calc(100% - 100px);
    
 }
 
