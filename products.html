@@ -15,19 +15,24 @@
         <header>
             <div class="logo"> </div>
             <nav id="nav">
-                <svg  style="margin-left: auto"  xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" id="list-nav-icon" onclick="toggle_nav()">
-                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                  </svg>
+                <svg style="margin-left: auto" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16" id="list-nav-icon"
+                    onclick="toggle_nav()">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
                 <a href="login.html">LOGIN</a>
-                <a href="index.html" >HOME</a>
-                
-                
+                <a href="index.html">HOME</a>
+
+
                 <a href="products.html" class="selected-tab">PRODUTOS</a>
                 <a href="register.html">REGISTRO</a>
             </nav>
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" id="list-nav-icon" onclick="toggle_nav()">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16" id="list-nav-icon" onclick="toggle_nav()">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
         </header>
 
         <div id="search-container">
@@ -47,20 +52,20 @@
     <main>
         <!-- Resultados para: Nome< -->
         <p style="text-align: center; font-size: 20px;" id="results-for-text">Aqui está todos os produtos</p>
+        <div id="laoding-icon"
+            style="margin: auto; margin-top: 100px; display: flex; flex-direction: column; align-items: center; ">
+            <img width=40 height=" 40" src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca_w200.gif">
+            <p>Aguarde..</p>
+        </div>
         <section class="products" id="product-list">
-                <div class="product" id="product-template">
-                    <img id="image"
-                        src="https://www.lifefitness.com/resource/image/2325612/portrait_ratio1x1/400/400/bd2711a21b022bd880ccbd5ac5f0299f/Xs/life-fitness-integrity-series-powermill-with-24-inch-se4-in-titanium.png">
-                    <p id="price">1420,00 R$</p>
-                    <h1 id="name">POWERMILL CLIMBER</h1>
-                </div>
-    
-                <div id="laoding-icon"
-                    style="margin: auto; margin-top: 100px; display: flex; flex-direction: column; align-items: center; ">
-                    <img width=40 height=" 40"
-                        src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca_w200.gif">
-                    <p>Aguarde..</p>
-                </div>
+            <div class="product" id="product-template">
+                <img id="image"
+                    src="https://www.lifefitness.com/resource/image/2325612/portrait_ratio1x1/400/400/bd2711a21b022bd880ccbd5ac5f0299f/Xs/life-fitness-integrity-series-powermill-with-24-inch-se4-in-titanium.png">
+                <p id="price">1420,00 R$</p>
+                <h1 id="name">POWERMILL CLIMBER</h1>
+            </div>
+
+
         </section>
 
     </main>
