@@ -27,14 +27,27 @@
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    
+}
+
+
+
+.login-section {
+    width: 1400px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 40px;
+
 }
 
 .login-container {
     margin: 60px;
     margin-top: 100px;
     width: 300px;
-    max-width: 100%;
-
+   
 }
 
 .login-container input {
@@ -120,18 +133,25 @@ footer > div {
     gap: 20px;
 }
 
+.banner-section {
+    
+    background: url(../assets/background.jpg);
+    background-size: 100% 100%;
+}
 
 .banner-container {
+    margin: auto;
+    max-width: 1600px;
     padding: 100px;
     display: flex;
     gap: 92px;
     justify-content: space-between;
     
     align-items: center;
-    background: url(../assets/background.jpg);
-    background-size: 100% 100%;
     color: white;
 }
+
+
 
 
 .banner-container img {
@@ -204,6 +224,14 @@ footer > div {
     justify-content: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+
+}
+
+
+
+.demo {
+    margin: auto;
+    max-width: 1400px;
 }
 
 .demo > div {
@@ -252,6 +280,7 @@ footer > div {
         font-size: 15px;
     }
     .banner-container {
+      
         padding: 6px 14px;
         justify-content: center;
        
